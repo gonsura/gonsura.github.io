@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+    }
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    
+    img{
+        width: 50%;
+        object-fit: cover;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(28, 28, 28);
+    }
+    li{
+        list-style: none;
+    }
+    
+    .wrap-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 20px;
+        
+    
+    }
+    .menu-list{
+        color: #ddd;
+    }
+    nav{
+        display: flex;
+        background-color: rgb(28, 28, 28);
+    }
+    nav summary{
+        cursor: pointer;
+        list-style: none;
+        color: #ddd;
+        font-size: 2em;
+    }
+    /*article*/
+    article{
+        padding: 4em;
+    }
+    article details ul li a{
+        font-weight: bold;
+    }
+    article details ul li a:hover{
+        color: rgb(85, 78, 161);
+    }
+    article summary{
+        margin-top: 1em;
+        list-style: none;
+        padding: 1em;
+        background: #ddd;
+        margin-bottom: 1em;
+        cursor: pointer;
+        outline: none;
+        border-radius: .4em;
+        font-weight: bold;
+        transition: 0.3s ease-in-out;
+    }
+    article summary:hover{
+        background-color: rgb(201, 198, 198);
+    }
+    article details[open] summary~ *{
+        animation: sweep .5s ease-in-out;
+    }
+    @keyframes sweep {
+        from{
+            opacity: 0; margin-top: -10px;
+        }
+        to{
+            opacity: 1; margin-top: 0;
+        }
+    }
+    .sinopsis{
+        background-color: rgb(28, 28, 28);
+        color: #ddd;
+        border-radius: .3em;
+    }
+    .isi{
+        margin-top: 2em;
+    }
+    
+    @media  (max-width: 600px) {
+       article{
+        padding: 1em;
+       }
+        
+    }
