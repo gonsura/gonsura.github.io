@@ -29,7 +29,6 @@ nav{
 }
 .menu-list{
     padding: 10px;
-
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
@@ -79,6 +78,7 @@ header{
     background-color: #ddd;
     list-style: none;
     padding: 10px;
+    width: 100%;
     border-radius: .4em;
     transition: 0.3s ease-in-out;
 }
